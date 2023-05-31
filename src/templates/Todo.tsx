@@ -35,7 +35,7 @@ const Todo = () => {
     }
   }
 
-  const deleteTodoList=(index:any)=>{
+  const deleteTodo=(index:any)=>{
     setTodoList((prevTodoList)=>{
       const tempPrevTodoList=cloneDeep(prevTodoList)
       tempPrevTodoList.splice(index,1)
@@ -67,7 +67,7 @@ const Todo = () => {
           })
         }}
         onTodoDelete={(index)=>{
-          deleteTodoList(index)
+          deleteTodo(index)
         }}
       />
     </>
