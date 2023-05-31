@@ -1,10 +1,10 @@
 import React from "react";
-// import * as Types from 'src/types/types'
+import * as Types from 'src/types/types'
 
 import InputAndButton from 'src/molecules/InputAndButton'
 
 
-const TodoHead = (props:any) => {
+const TodoHead = (props:Types.PropsTodoHead) => {
   return (
     <>
       <p>{props.errorMessage}</p>

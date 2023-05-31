@@ -4,6 +4,6 @@ export type Todo={
 }
 
 export type TodoControl={
-    onTodoCheck:(arg0: boolean, index?: number)=>void,
-    onTodoDelete:(index?: number)=>void,
+    onTodoCheck:(e: boolean, index: number)=>void,
+    onTodoDelete:(index: number)=>void,
 }

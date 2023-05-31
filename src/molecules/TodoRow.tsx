@@ -1,10 +1,10 @@
 import React from "react";
-// import * as Types from 'src/types/types'
+import * as Types from 'src/types/types'
 
 import Button from 'src/atom/Button'
 import Checkbox from 'src/atom/Checkbox'
 
-const TodoRow = (props:any) => {
+const TodoRow = (props:Types.PropsTodoRow) => {
   return (
     <>
       <span>

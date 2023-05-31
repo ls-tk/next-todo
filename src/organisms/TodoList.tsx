@@ -1,11 +1,10 @@
-/* eslint-disable react/jsx-key */
 import React from "react";
-// import * as Types from 'src/types/types'
+import * as Types from 'src/types/types'
 
 import TodoRow from "src/molecules/TodoRow";
 
 
-const TodoList = (props:any) => {
+const TodoList = (props:Types.PropsTodoList) => {
   return (
     <>
       <ul>
@@ -18,7 +17,6 @@ const TodoList = (props:any) => {
                 onTodoCheck={(e)=>{
                   props.onTodoCheck(e,index)
                 }}
-                buttonText={todo.buttonText}
                 onTodoDelete={()=>{
                   props.onTodoDelete(index)
                 }}

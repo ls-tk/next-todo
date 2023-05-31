@@ -1,7 +1,7 @@
 import React from "react";
 import cloneDeep from "lodash/cloneDeep"
-// import * as Types from 'src/types/types'
-import { useState, useEffect } from 'react'
+import * as Types from 'src/types/types'
+import { useState } from 'react'
 
 import TodoHead from 'src/organisms/TodoHead'
 import TodoList from 'src/organisms/TodoList'
@@ -9,7 +9,7 @@ import TodoList from 'src/organisms/TodoList'
 const Todo = () => {
   const [inputValue,setInputValue]=useState<string>('')
 
-  const [todoList,setTodoList]=useState<any>([
+  const [todoList,setTodoList]=useState<Types.Todos>([
     {
       todoLabel:'朝起きる',
       isTodoDone:false,
@@ -35,7 +35,7 @@ const Todo = () => {
     }
   }
 
-  const deleteTodoList=(index)=>{
+  const deleteTodoList=(index:any)=>{
     setTodoList((prevTodoList)=>{
       const tempPrevTodoList=cloneDeep(prevTodoList)
       tempPrevTodoList.splice(index,1)
