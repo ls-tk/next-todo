@@ -47,6 +47,7 @@ const Todo = () => {
     <>
       <TodoHead
         inputText={inputValue}
+        buttonText="Add"
         onChange={(e)=>{
           setInputValue(e)
         }}

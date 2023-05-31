@@ -10,7 +10,7 @@ const TodoHead = (props:any) => {
       <p>{props.errorMessage}</p>
       <InputAndButton
         inputText={props.inputText}
-        buttonText="Add"
+        buttonText={props.buttonText}
         onChange={(e)=>{
           props.onChange(e)
         }}
